@@ -1,0 +1,55 @@
+{
+  "name": "react-redux-sagas-ducks",
+  "version": "0.0.1",
+  "description": "Boilerplate for react app with redux store, sagas for handling async/side effect code and ducks code organization",
+  "main": "index.js",
+  "scripts": {
+    "start": "watchify --debug --extension=js -o public/bundle.js src/app.js & node index.js"
+  },
+  "browserify": {
+    "transform": [
+      [
+        "babelify",
+        {
+          "presets": [
+            "es2015",
+            "react"
+          ]
+        }
+      ]
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stasundr/react-redux-sagas-ducks.git"
+  },
+  "keywords": [
+    "react",
+    "redux"
+  ],
+  "author": "Stanislav Dryomov",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/stasundr/react-redux-sagas-ducks/issues"
+  },
+  "homepage": "https://github.com/stasundr/react-redux-sagas-ducks#readme",
+  "dependencies": {
+    "express": "4.14.0",
+    "isomorphic-fetch": "2.2.1",
+    "morgan": "1.7.0",
+    "react": "15.1.0",
+    "react-dom": "15.1.0",
+    "react-redux": "4.4.5",
+    "redux": "3.5.2",
+    "redux-logger": "2.6.1",
+    "redux-saga": "0.10.5"
+  },
+  "devDependencies": {
+    "babel-polyfill": "6.9.1",
+    "babel-preset-es2015": "6.9.0",
+    "babel-preset-react": "6.5.0",
+    "babelify": "7.3.0",
+    "browserify": "13.0.1",
+    "watchify": "3.7.0"
+  }
+}
